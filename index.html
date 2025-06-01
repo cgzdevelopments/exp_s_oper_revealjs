@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!--Organización de la memoria-->
+			<section>
+				<!--Memoria Principal-->
+				<section>
+					<h1>Organización de la Memoria</h1>
+					<p>La organización de la memoria en un sistema informático es crucial para la ejecución eficiente de
+						programas. La memoria se estructura de manera jerárquica para equilibrar velocidad, costo y
+						capacidad.</p>
+
+					<div class="section">
+						<h2>Memoria Principal</h2>
+						<p>La memoria principal, también conocida como RAM (Random Access Memory), es la parte de la
+							memoria donde la CPU puede acceder directamente a los datos y las instrucciones que se están
+							utilizando actualmente. Es volátil, lo que significa que los datos se pierden cuando se
+							apaga la alimentación.</p>
+						<div class="image-placeholder">Imagen de la Memoria Principal</div>
+						<img src="placeholder_ram.png" alt="Memoria Principal" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h2>Organización del almacenamiento: cómo se distribuye la memoria para los procesos.</h2>
+						<p>La forma en que se distribuye la memoria principal entre los diferentes procesos activos es
+							fundamental para la multitarea. El sistema operativo se encarga de asignar porciones de
+							memoria a cada proceso para su código, datos y pila.</p>
+						<div class="image-placeholder">Imagen de la Distribución de la Memoria para Procesos</div>
+						<img src="placeholder_memory_layout.png" alt="Distribución de la Memoria"
+							class="image-placeholder">
+					</div>
+				</section>
+				<!--Organización del almacenamiento: cómo se distribuye la memoria para los procesos-->
+				<section>
+
+				</section>
+
+				<!--Administración: quién y cómo se gestiona el uso de la memoria-->
+				<section>
+
+				</section>
+
+				<!--Jerarquía de memoria: registros, caché, RAM, almacenamiento secundario-->
+				<section>
+
+				</section>
+
+				<!--Particiones: fijas vs. Dinámicas-->
+				<section>
+
+				</section>
+
+				<!--Fragmentación: interna y externa-->
+				<section>
+
+				</section>
+
+				<!--Condensación y compactación: técnicas para reducir la fragmentación-->
+				<section>
+
+				</section>
+
+				<!--Estrategias de colocación: primer ajuste, mejor ajuste, peor ajuste-->
+				<section>
+
+				</section>
+			</section>
+
+			<!--Administración de memoria virtual-->
+			<section>
+				<!--Diferencia entre direcciones lógicas y físicas-->
+				<section>
+
+				</section>
+
+				<!--Paginación: definición, marcos de página, tabla de páginas-->
+				<section>
+
+				</section>
+
+				<!--Segmentación: qué es y cómo se usa-->
+				<section>
+
+				</section>
+
+				<!--Paginación por demanda: carga de páginas solo cuando son necesarias-->
+				<section>
+
+				</section>
+
+				<!--Fallo de página: causas y manejo-->
+				<section>
+
+				</section>
+
+				<!--Segmentación paginada y paginación segmentada: combinación de técnicas-->
+				<section>
+
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
