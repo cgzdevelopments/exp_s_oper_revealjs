@@ -9,37 +9,129 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="dist/theme/sky.css" />
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<style>
+		.first-page-text {
+			font-size: 20px;
+		}
+
+		.paragraph-text {
+			font-size: 18px;
+		}
+	</style>
+
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
+			<!--Presentacion-->
+			<section>
+				<p class="first-page-text">Republica Bolivariana de Venezuela</p>
+				<p class="first-page-text">Ministerio del Poder Popular para la Educacion Universitaria</p>
+				<p class="first-page-text">Universidad Politécnica Territorial de los Altos Mirandinos "Cecilio Acosta"
+				</p>
+				<p class="first-page-text">Programa Nacional de Formacion en Informatica</p>
+				<p class="first-page-text">Sistemas Operativos</p>
+				<br><br>
+				<h4>Memoria principal</h4>
+				<br><br>
+				<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+					<span class="first-page-text">Profesora:</span>
+					<span class="first-page-text">Estudiantes:</span>
+				</div>
+				<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+					<span class="first-page-text">Diana Koussan</span>
+					<span class="first-page-text">Cesar García C.I. 24285019</span>
+				</div>
+				<div style="display: flex; justify-content: end; align-items: center; width: 100%;">
+					<span class="first-page-text">Oscar Egurrola</span>
+				</div>
+				<div style="display: flex; justify-content: end; align-items: center; width: 100%;">
+					<span class="first-page-text">Miguel Reyes</span>
+				</div>
+				<p class="first-page-text">13 de junio de 2025
+				</p>
+
+			</section>
 			<!--Organización de la memoria-->
 			<section>
 				<!--Memoria Principal-->
 				<section>
-					<h1>Organización de la Memoria</h1>
-					<p>La organización de la memoria en un sistema informático es crucial para la ejecución eficiente de
-						programas. La memoria se estructura de manera jerárquica para equilibrar velocidad, costo y
-						capacidad.</p>
 
-					<div class="section">
-						<h2>Memoria Principal</h2>
-						<p>La memoria principal, también conocida como RAM (Random Access Memory), es la parte de la
-							memoria donde la CPU puede acceder directamente a los datos y las instrucciones que se están
-							utilizando actualmente. Es volátil, lo que significa que los datos se pierden cuando se
-							apaga la alimentación.</p>
-						<div class="image-placeholder">Imagen de la Memoria Principal</div>
-						<img src="placeholder_ram.png" alt="Memoria Principal" class="image-placeholder">
+					<div>
+						<p style="font-size: 35px;">Organización de la Memoria</p>
+
+						<p class="paragraph-text">Es crucial para la
+							ejecución eficiente de
+							programas y se estructura de manera jerárquica para equilibrar velocidad, costo y
+							capacidad.</p>
+						<img src="img/hierarchy.png" style="width: 50px;" alt="Organizacion de memoria">
 					</div>
 
+					<div style="display: flex; justify-content: center; width: 100%;" class="fragment fade-down">
+						<div style="display: flex; align-items: center; gap: 10px;">
+							<div>
+								<p style="font-size: 25px;">Memoria Principal</p>
+								<p class="paragraph-text">La memoria principal, también conocida como RAM (Random Access
+									Memory), es la parte de la
+									memoria donde la CPU puede acceder directamente a los datos y las instrucciones que
+									se están
+									utilizando actualmente. Es volátil, lo que significa que los datos se pierden cuando
+									se
+									apaga la alimentación.</p>
+							</div>
+							<div style="width: 30px;"></div>
+							<div>
+								<p style="font-size: 25px;">Memoria Secundaria</p>
+								<p class="paragraph-text">La memoria principal, también conocida como RAM (Random Access
+									Memory), es la parte de la
+									memoria donde la CPU puede acceder directamente a los datos y las instrucciones que
+									se están
+									utilizando actualmente. Es volátil, lo que significa que los datos se pierden cuando
+									se
+									apaga la alimentación.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="fragment fade-down">
+						<div style="display: flex; justify-content: center; width: 100%;">
+							<div style="display: flex; align-items: center; gap: 10px;">
+								<img src="img/ram.png" style="width: 100px;" alt="Memoria Principal">
+								<img src="img/arrow.png" style="width: 25px;" alt="Memoria Principal">
+								<img src="img/arrow.png" style="width: 25px; transform: rotate(180deg);"
+									alt="Memoria Principal">
+								<img src="img/cpu.png" style="width: 85px;" alt="Memoria Principal">
+								<img src="img/arrow.png" style="width: 25px;" alt="Memoria Principal">
+								<img src="img/arrow.png" style="width: 25px; transform: rotate(180deg);"
+									alt="Memoria Principal">
+								<img src="img/hdd.png" style="width: 100px;" alt="Memoria Secundaria">
+							</div>
+						</div>
+
+						<div style="display: flex; justify-content: center; width: 100%;">
+							<div style="display: flex; align-items: center; gap: 10px;">
+								<p style="font-size: 15px;">RAM</p>
+								<div style="width: 100px;"></div>
+								<p style="font-size: 15px;">CPU</p>
+								<div style="width: 100px;"></div>
+								<p style="font-size: 15px;">HDD</p>
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+				<section>
 					<div class="section">
-						<h2>Organización del almacenamiento: cómo se distribuye la memoria para los procesos.</h2>
-						<p>La forma en que se distribuye la memoria principal entre los diferentes procesos activos es
+						<h5>Organización del almacenamiento: cómo se distribuye la memoria para los procesos.</h5>
+						<p class="paragraph-text">La forma en que se distribuye la memoria principal entre los
+							diferentes procesos activos es
 							fundamental para la multitarea. El sistema operativo se encarga de asignar porciones de
 							memoria a cada proceso para su código, datos y pila.</p>
 						<div class="image-placeholder">Imagen de la Distribución de la Memoria para Procesos</div>
@@ -49,37 +141,280 @@
 				</section>
 				<!--Organización del almacenamiento: cómo se distribuye la memoria para los procesos-->
 				<section>
+					<h3>Administración de la Memoria</h3>
+					<p>La administración de la memoria es una función crítica del Sistema Operativo (SO). El SO es el
+						responsable de gestionar el uso de la memoria principal de manera eficiente y segura.</p>
 
-				</section>
+					<h3>Funciones del Sistema Operativo en la Administración de la Memoria</h3>
+					<ul>
+						<li><strong>Asignación y Desasignación:</strong> El SO asigna bloques de memoria a los procesos
+							cuando los solicitan y los libera cuando los procesos terminan o ya no necesitan esa
+							memoria.</li>
+						<li><strong>Seguimiento del Uso:</strong> El SO mantiene un registro de qué partes de la memoria
+							están siendo utilizadas por qué procesos y cuáles están libres.</li>
+						<li><strong>Protección de la Memoria:</strong> El SO asegura que un proceso no pueda acceder a
+							la memoria que ha sido asignada a otro proceso, evitando interferencias y fallos en el
+							sistema.</li>
+						<li><strong>Gestión de la Memoria Virtual (si aplica):</strong> El SO también gestiona la
+							memoria virtual, permitiendo que los procesos utilicen más memoria de la que está
+							físicamente disponible.</li>
+					</ul>
 
-				<!--Administración: quién y cómo se gestiona el uso de la memoria-->
-				<section>
-
+					<div class="image-placeholder">Imagen del Sistema Operativo Administrando la Memoria</div>
+					<img src="placeholder_os_memory.png" alt="Administración de la Memoria por el SO"
+						class="image-placeholder">
 				</section>
 
 				<!--Jerarquía de memoria: registros, caché, RAM, almacenamiento secundario-->
 				<section>
+					<h3>Jerarquía de Memoria</h3>
+					<p>La memoria de un sistema informático está organizada en una jerarquía de diferentes niveles, cada
+						uno con características distintas en términos de velocidad, costo y capacidad. Esta jerarquía
+						busca optimizar el rendimiento al mantener los datos más frecuentemente utilizados en los
+						niveles más rápidos de la memoria.</p>
 
+					<div class="hierarchy-image">
+						<img src="placeholder_memory_hierarchy.png" alt="Jerarquía de Memoria" style="width: 400px;">
+						<p style="font-size: small; color: #777;">Representación de la Jerarquía de Memoria</p>
+					</div>
+
+					<div class="level">
+						<h3>Registros</h3>
+						<p>Son la memoria más rápida y pequeña, ubicada directamente en la CPU. Almacenan los datos y
+							las instrucciones que la CPU está procesando actualmente.</p>
+						<div class="image-placeholder">Imagen de Registros de la CPU</div>
+						<img src="placeholder_registers.png" alt="Registros" class="image-placeholder">
+					</div>
+
+					<div class="level">
+						<h3>Caché</h3>
+						<p>Es una memoria de alta velocidad más pequeña que la RAM, utilizada para almacenar copias de
+							los datos a los que se accede con frecuencia desde la RAM. Esto reduce el tiempo de acceso a
+							dichos datos. Existen varios niveles de caché (L1, L2, L3).</p>
+						<div class="image-placeholder">Imagen de la Memoria Caché</div>
+						<img src="placeholder_cache.png" alt="Caché" class="image-placeholder">
+					</div>
+
+					<div class="level">
+						<h3>RAM (Memoria Principal)</h3>
+						<p>Es la memoria principal del ordenador, donde se almacenan los datos y las instrucciones que
+							los programas están utilizando activamente. Ofrece un equilibrio entre velocidad y
+							capacidad, aunque es más lenta que la caché y los registros.</p>
+						<div class="image-placeholder">Imagen de la RAM</div>
+						<img src="placeholder_ram.png" alt="RAM" class="image-placeholder">
+					</div>
+
+					<div class="level">
+						<h3>Almacenamiento Secundario</h3>
+						<p>Es un almacenamiento no volátil (los datos se conservan incluso sin energía) y de gran
+							capacidad, utilizado para almacenar datos a largo plazo. Ejemplos incluyen discos duros
+							(HDD), unidades de estado sólido (SSD) y otros medios de almacenamiento. Es el nivel más
+							lento de la jerarquía.</p>
+						<div class="image-placeholder">Imagen del Almacenamiento Secundario</div>
+						<img src="placeholder_secondary_storage.png" alt="Almacenamiento Secundario"
+							class="image-placeholder">
+					</div>
 				</section>
 
 				<!--Particiones: fijas vs. Dinámicas-->
 				<section>
+					<h3>Particiones de Memoria: Fijas vs. Dinámicas</h3>
+					<p>La partición de la memoria es una técnica utilizada para dividir la memoria principal en varias
+						secciones, donde cada sección puede ser ocupada por un proceso.</p>
 
+					<div class="section">
+						<h3>Particiones Fijas</h3>
+						<p>En la partición fija, la memoria se divide en un número fijo de particiones al inicio del
+							sistema. El tamaño de estas particiones puede ser igual o diferente, pero una vez definido,
+							no cambia.</p>
+						<h3>Ventajas:</h3>
+						<ul>
+							<li>Implementación sencilla.</li>
+							<li>Fácil de administrar.</li>
+						</ul>
+						<h3>Desventajas:</h3>
+						<ul>
+							<li><strong>Fragmentación Interna:</strong> Si un proceso es más pequeño que la partición
+								asignada, el espacio restante dentro de la partición se desperdicia.</li>
+							<li><strong>Limitación del Tamaño del Proceso:</strong> Un proceso no puede ser más grande
+								que la partición más grande.</li>
+							<li>Posible desperdicio de memoria si las particiones no se ajustan a las necesidades de los
+								procesos.</li>
+						</ul>
+						<div class="image-placeholder">Imagen de Particiones Fijas</div>
+						<img src="placeholder_fixed_partitions.png" alt="Particiones Fijas" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Particiones Dinámicas</h3>
+						<p>En la partición dinámica, las particiones de memoria se crean de acuerdo con el tamaño que
+							necesita cada proceso en el momento de su carga. El número y el tamaño de las particiones
+							varían dinámicamente durante la ejecución del sistema.</p>
+						<h3>Ventajas:</h3>
+						<ul>
+							<li>No hay fragmentación interna (idealmente, el tamaño de la partición coincide con el
+								tamaño del proceso).</li>
+							<li>Mejor utilización de la memoria en comparación con las particiones fijas.</li>
+						</ul>
+						<h3>Desventajas:</h3>
+						<ul>
+							<li><strong>Fragmentación Externa:</strong> Con el tiempo, la memoria puede quedar dividida
+								en muchos pequeños bloques no contiguos, lo que dificulta la asignación de memoria a
+								procesos grandes, incluso si la cantidad total de memoria libre es suficiente.</li>
+							<li>Gestión de memoria más compleja (seguimiento de bloques libres y ocupados).</li>
+						</ul>
+						<div class="image-placeholder">Imagen de Particiones Dinámicas</div>
+						<img src="placeholder_dynamic_partitions.png" alt="Particiones Dinámicas"
+							class="image-placeholder">
+					</div>
 				</section>
 
 				<!--Fragmentación: interna y externa-->
 				<section>
+					<h3>Fragmentación de Memoria: Interna y Externa</h3>
+					<p>La fragmentación de la memoria es un problema que surge en los sistemas de gestión de memoria
+						cuando el espacio de memoria utilizable se reduce debido a la forma en que se asigna y desasigna
+						la memoria.</p>
 
+					<div class="section">
+						<h3>Fragmentación Interna</h3>
+						<p>La fragmentación interna ocurre cuando se asigna a un proceso un bloque de memoria que es
+							ligeramente mayor de lo que realmente necesita. El espacio sobrante dentro de ese bloque
+							asignado se desperdicia porque no puede ser utilizado por ese proceso ni por ningún otro
+							hasta que el bloque se libere por completo.</p>
+						<p>Este tipo de fragmentación es común en sistemas con particiones de memoria fijas. Si una
+							partición es de un tamaño predeterminado y un proceso necesita menos espacio, se le asigna
+							la partición completa, y la parte no utilizada dentro de esa partición es la fragmentación
+							interna.</p>
+						<div class="image-placeholder">Imagen de Fragmentación Interna</div>
+						<img src="placeholder_internal_fragmentation.png" alt="Fragmentación Interna"
+							class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Fragmentación Externa</h3>
+						<p>La fragmentación externa ocurre cuando hay suficiente espacio total de memoria libre para
+							satisfacer la solicitud de un proceso, pero este espacio no es contiguo; está disperso en
+							pequeños bloques entre la memoria ocupada. Como resultado, no se puede asignar un único
+							bloque contiguo lo suficientemente grande al proceso, a pesar de que la memoria total libre
+							podría ser adecuada.</p>
+						<p>Este tipo de fragmentación es común en sistemas con particiones de memoria dinámicas, donde
+							los bloques de memoria se asignan y liberan en diferentes tamaños a lo largo del tiempo.</p>
+						<div class="image-placeholder">Imagen de Fragmentación Externa</div>
+						<img src="placeholder_external_fragmentation.png" alt="Fragmentación Externa"
+							class="image-placeholder">
+					</div>
 				</section>
 
 				<!--Condensación y compactación: técnicas para reducir la fragmentación-->
 				<section>
+					<h3>Condensación y Compactación de Memoria</h3>
+					<p>La compactación (también conocida como condensación) es una técnica utilizada en la gestión de
+						memoria para reducir la fragmentación externa. Cuando la memoria se fragmenta externamente, hay
+						suficiente memoria libre total, pero está dividida en pequeños bloques no contiguos, lo que
+						impide la asignación de bloques grandes a nuevos procesos.</p>
 
+					<h3>¿Qué es la Compactación?</h3>
+					<p>La compactación implica reorganizar los bloques de memoria ocupados de manera que todo el espacio
+						libre disponible se junte en un único bloque contiguo grande. Esto se logra moviendo los
+						procesos que están actualmente en memoria para que estén adyacentes entre sí, dejando todos los
+						huecos de memoria libre juntos.</p>
+
+					<h3>Proceso de Compactación</h3>
+					<ol>
+						<li>El sistema operativo identifica las áreas de memoria libre que están dispersas.</li>
+						<li>Los procesos activos se mueven (se copian) a nuevas ubicaciones en la memoria de manera que
+							los bloques ocupados queden contiguos.</li>
+						<li>Después de mover los procesos, todo el espacio libre restante se encuentra en un bloque
+							grande y contiguo.</li>
+						<li>Es importante actualizar las direcciones de memoria en las tablas de direcciones de los
+							procesos que han sido movidos.</li>
+					</ol>
+
+					<h3>Costos de la Compactación</h3>
+					<p>Aunque la compactación es efectiva para reducir la fragmentación externa, tiene un costo
+						asociado:</p>
+					<ul>
+						<li><strong>Sobrecarga de la CPU:</strong> Mover grandes cantidades de datos de un lugar a otro
+							en la memoria requiere tiempo de la CPU, lo que puede ralentizar la ejecución general del
+							sistema.</li>
+						<li><strong>Interrupción de Procesos:</strong> Los procesos deben detenerse mientras se están
+							moviendo, lo que puede afectar el rendimiento y la capacidad de respuesta del sistema.</li>
+					</ul>
+
+					<div class="image-placeholder">Imagen de la Compactación de Memoria (Antes y Después)</div>
+					<img src="placeholder_memory_compaction.png" alt="Compactación de Memoria"
+						class="image-placeholder">
 				</section>
 
 				<!--Estrategias de colocación: primer ajuste, mejor ajuste, peor ajuste-->
 				<section>
+					<h3>Estrategias de Colocación de Memoria</h3>
+					<p>Cuando se utiliza la partición de memoria dinámica, el sistema operativo debe decidir cuál bloque
+						de memoria libre asignar a un nuevo proceso. Existen varias estrategias de colocación (o ajuste)
+						para tomar esta decisión:</p>
 
+					<div class="strategy">
+						<h3>Primer Ajuste (First-Fit)</h3>
+						<p>El algoritmo de primer ajuste busca a través de la lista de bloques libres y asigna el primer
+							bloque que sea lo suficientemente grande para el proceso.</p>
+						<div class="pros-cons">
+							<span class="pros">Ventajas:</span>
+							<ul>
+								<li>Simple de implementar y rápido en la mayoría de los casos (la búsqueda termina en el
+									primer bloque adecuado).</li>
+							</ul>
+							<span class="cons">Desventajas:</span>
+							<ul>
+								<li>Puede llenar la parte frontal de la memoria con pequeños bloques, lo que podría
+									dejar bloques libres más grandes hacia el final que podrían ser necesarios para
+									procesos más grandes.</li>
+								<li>Tiende a causar más fragmentación externa en la parte inicial de la memoria.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="strategy">
+						<h3>Mejor Ajuste (Best-Fit)</h3>
+						<p>El algoritmo de mejor ajuste busca a través de todos los bloques libres y asigna el bloque
+							más pequeño que sea lo suficientemente grande para el proceso. El objetivo es minimizar el
+							espacio desperdiciado dentro del bloque asignado (reducir la fragmentación interna).</p>
+						<div class="pros-cons">
+							<span class="pros">Ventajas:</span>
+							<ul>
+								<li>Generalmente conduce a una mejor utilización de la memoria en comparación con el
+									primer ajuste, ya que los huecos pequeños se dejan después de las asignaciones.</li>
+							</ul>
+							<span class="cons">Desventajas:</span>
+							<ul>
+								<li>Más lento que el primer ajuste porque debe buscar en toda la lista de bloques
+									libres.</li>
+								<li>Tiende a crear muchos bloques libres muy pequeños que podrían no ser útiles para
+									futuras asignaciones (puede aumentar la fragmentación externa a largo plazo).</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="strategy">
+						<h3>Peor Ajuste (Worst-Fit)</h3>
+						<p>El algoritmo de peor ajuste busca a través de todos los bloques libres y asigna el bloque más
+							grande disponible. La idea es que al dejar un bloque libre grande restante, es más probable
+							que sea útil para futuras asignaciones grandes.</p>
+						<div class="pros-cons">
+							<span class="pros">Ventajas:</span>
+							<ul>
+								<li>Podría reducir la creación de bloques libres muy pequeños.</li>
+							</ul>
+							<span class="cons">Desventajas:</span>
+							<ul>
+								<li>Generalmente el peor rendimiento en términos de utilización de la memoria.</li>
+								<li>Tiende a romper los bloques libres grandes, que podrían haber sido útiles para
+									procesos grandes posteriores.</li>
+								<li>También requiere buscar en toda la lista de bloques libres, lo que lo hace más lento
+									que el primer ajuste.</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 			</section>
 
@@ -87,32 +422,327 @@
 			<section>
 				<!--Diferencia entre direcciones lógicas y físicas-->
 				<section>
+					<h3>Direcciones Lógicas vs. Físicas</h3>
+					<p>En los sistemas de gestión de memoria virtual, es fundamental distinguir entre las direcciones
+						lógicas (o virtuales) y las direcciones físicas.</p>
 
+					<div class="section">
+						<h3>Direcciones Lógicas (o Virtuales)</h3>
+						<p>Las direcciones lógicas son las direcciones generadas por la CPU durante la ejecución de un
+							programa. Estas direcciones forman parte del espacio de direcciones virtual de un proceso.
+							Cada proceso tiene su propio espacio de direcciones virtual, que es independiente del
+							espacio de direcciones virtual de otros procesos y de la memoria física real.</p>
+						<ul>
+							<li>Son generadas por la CPU.</li>
+							<li>Son específicas para cada proceso.</li>
+							<li>No corresponden directamente a las ubicaciones físicas en la memoria principal.</li>
+							<li>Permiten que los programas se escriban sin necesidad de conocer la disposición física de
+								la memoria.</li>
+						</ul>
+						<div class="image-placeholder">Diagrama del Espacio de Direcciones Lógicas</div>
+						<img src="placeholder_logical_address.png" alt="Direcciones Lógicas" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Direcciones Físicas</h3>
+						<p>Las direcciones físicas son las direcciones reales de las ubicaciones en la memoria principal
+							(RAM). Estas son las direcciones que la unidad de memoria física realmente utiliza para
+							acceder a los datos.</p>
+						<ul>
+							<li>Corresponden a las ubicaciones físicas en la memoria RAM.</li>
+							<li>Son únicas en todo el sistema.</li>
+							<li>Son utilizadas por el hardware de la memoria.</li>
+						</ul>
+						<div class="image-placeholder">Diagrama de la Memoria Física</div>
+						<img src="placeholder_physical_address.png" alt="Direcciones Físicas" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Unidad de Gestión de Memoria (MMU)</h3>
+						<p>La Unidad de Gestión de Memoria (MMU) es un hardware especializado que se encarga de la
+							traducción de direcciones lógicas a direcciones físicas. Cuando la CPU genera una dirección
+							lógica para acceder a la memoria, la MMU intercepta esta dirección y la traduce a la
+							correspondiente dirección física antes de que se acceda a la memoria real.</p>
+						<p>Esta traducción se realiza utilizando estructuras de datos como tablas de páginas (en el caso
+							de la paginación) o tablas de segmentos (en el caso de la segmentación), que son mantenidas
+							por el sistema operativo.</p>
+						<div class="image-placeholder">Diagrama de la Traducción de Direcciones por la MMU</div>
+						<img src="placeholder_mmu_translation.png" alt="Traducción por la MMU"
+							class="image-placeholder">
+					</div>
 				</section>
 
 				<!--Paginación: definición, marcos de página, tabla de páginas-->
 				<section>
+					<h3>Paginación</h3>
+					<p>La paginación es una técnica de gestión de memoria virtual que permite que el espacio de
+						direcciones lógico de un proceso sea no contiguo. Tanto la memoria lógica como la memoria física
+						se dividen en bloques de tamaño fijo.</p>
 
+					<div class="section">
+						<h3>Definición de Paginación</h3>
+						<p>La paginación divide la memoria lógica de cada proceso en bloques de tamaño fijo llamados
+							<strong>páginas</strong>. De manera similar, divide la memoria física en bloques del mismo
+							tamaño fijo llamados <strong>marcos de página</strong> (o simplemente marcos).
+						</p>
+						<p>Cuando un proceso necesita ser cargado en la memoria, sus páginas se cargan en cualquier
+							marco de página disponible en la memoria física. Estos marcos no necesitan ser contiguos.
+						</p>
+						<div class="image-placeholder">Diagrama de la División en Páginas y Marcos</div>
+						<img src="placeholder_paging_division.png" alt="División en Páginas y Marcos"
+							class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Marcos de Página</h3>
+						<p>Los marcos de página son bloques de memoria física de tamaño fijo. Todos los marcos de página
+							en la memoria física tienen el mismo tamaño. El número de marcos de página en un sistema
+							depende del tamaño de la memoria física y del tamaño de los marcos.</p>
+						<ul>
+							<li>Son bloques de tamaño fijo en la memoria física.</li>
+							<li>Disponibles para ser asignados a las páginas de los procesos.</li>
+						</ul>
+						<div class="image-placeholder">Diagrama de los Marcos de Página en la Memoria Física</div>
+						<img src="placeholder_page_frames.png" alt="Marcos de Página" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Páginas</h3>
+						<p>Las páginas son bloques de tamaño fijo en el espacio de direcciones lógico de un proceso. Al
+							igual que los marcos de página, todas las páginas de un proceso (y de todos los procesos en
+							el sistema) tienen el mismo tamaño.</p>
+						<ul>
+							<li>Son bloques de tamaño fijo en el espacio de direcciones lógico.</li>
+							<li>Se cargan en los marcos de página de la memoria física.</li>
+						</ul>
+						<div class="image-placeholder">Diagrama de las Páginas en el Espacio de Direcciones Lógico</div>
+						<img src="placeholder_pages.png" alt="Páginas" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Tabla de Páginas</h3>
+						<p>Para saber en qué marco de página de la memoria física se encuentra cada página de un
+							proceso, el sistema operativo mantiene una estructura de datos llamada <strong>tabla de
+								páginas</strong> para cada proceso.</p>
+						<p>La tabla de páginas es esencialmente un array, donde el índice representa el número de página
+							lógica y la entrada en ese índice contiene el número del marco de página físico donde se
+							encuentra esa página. También puede contener bits de control adicionales (por ejemplo, bit
+							de validez, bits de protección).</p>
+						<p>Cuando la CPU genera una dirección lógica, esta se divide en un número de página y un
+							desplazamiento dentro de la página. El número de página se utiliza como índice en la tabla
+							de páginas para encontrar el número del marco correspondiente. El desplazamiento se copia
+							directamente y se añade a la dirección base del marco para obtener la dirección física real.
+						</p>
+						<div class="image-placeholder">Diagrama de una Tabla de Páginas y la Traducción de Direcciones
+						</div>
+						<img src="placeholder_page_table.png" alt="Tabla de Páginas" class="image-placeholder">
+					</div>
 				</section>
 
 				<!--Segmentación: qué es y cómo se usa-->
 				<section>
+					<h3>Segmentación</h3>
+					<p>La **segmentación** es una técnica de gestión de memoria que organiza la memoria lógica de un
+						proceso en bloques de tamaño variable llamados **segmentos**. A diferencia de la paginación, los
+						segmentos tienen un significado lógico para el programador, como un segmento de código, un
+						segmento de datos, una pila, etc.</p>
 
+					<div class="section">
+						<h3>¿Qué es la Segmentación?</h3>
+						<p>En un sistema segmentado, el espacio de direcciones lógico de un proceso se ve como una
+							colección de segmentos. Cada segmento tiene un nombre (o número de segmento) y una longitud.
+							Las direcciones lógicas se especifican mediante un par (número de segmento, desplazamiento).
+						</p>
+						<ul>
+							<li>**Segmentos:** Bloques de memoria lógica de tamaño variable. Cada segmento representa
+								una unidad lógica del programa.</li>
+							<li>**Dirección Lógica:** Compuesta por un **número de segmento** y un **desplazamiento**
+								dentro de ese segmento.</li>
+						</ul>
+						<div class="image-placeholder">Imagen de Segmentos en el Espacio Lógico</div>
+						<img src="placeholder_segments.png" alt="Segmentos" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>¿Cómo se usa?</h3>
+						<p>Para traducir una dirección lógica (número de segmento, desplazamiento) a una dirección
+							física, el sistema utiliza una **tabla de segmentos**. Cada entrada en la tabla de segmentos
+							contiene la dirección base física donde comienza el segmento en la memoria principal y la
+							longitud (límite) del segmento.</p>
+						<p>El hardware de gestión de memoria (MMU) realiza los siguientes pasos:</p>
+						<ol>
+							<li>Utiliza el **número de segmento** para indexar la **tabla de segmentos**.</li>
+							<li>Comprueba que el **desplazamiento** esté dentro de la longitud (límite) permitida del
+								segmento. Si el desplazamiento es mayor que la longitud, se produce un error (trampa de
+								segmentación).</li>
+							<li>Suma la **dirección base** del segmento (obtenida de la tabla) con el **desplazamiento**
+								para obtener la dirección física real en la memoria principal.</li>
+						</ol>
+						<div class="image-placeholder">Imagen de la Tabla de Segmentos y la Traducción de Direcciones
+						</div>
+						<img src="placeholder_segment_table.png" alt="Tabla de Segmentos" class="image-placeholder">
+					</div>
 				</section>
 
 				<!--Paginación por demanda: carga de páginas solo cuando son necesarias-->
 				<section>
+					<h3>Paginación por Demanda</h3>
+					<p>La **paginación por demanda** es una técnica de gestión de memoria virtual que optimiza el uso de
+						la memoria principal al cargar las páginas en la RAM solo cuando realmente se necesitan (es
+						decir, cuando se hace referencia a ellas por primera vez).</p>
 
+					<div class="section">
+						<h3>Carga de páginas solo cuando son necesarias</h3>
+						<p>Tradicionalmente, un programa completo o una gran parte de él se cargaba en la memoria antes
+							de que pudiera ejecutarse. La paginación por demanda rompe con este modelo:</p>
+						<ul>
+							<li>Cuando un programa inicia, solo se cargan en la memoria las páginas iniciales o
+								esenciales.</li>
+							<li>Durante la ejecución, si el programa intenta acceder a una dirección en una página que
+								no está actualmente en la memoria física, se produce un **fallo de página**.</li>
+							<li>Al ocurrir un fallo de página, el sistema operativo interviene, localiza la página
+								requerida en el almacenamiento secundario (disco duro) y la carga en un marco de página
+								libre de la memoria principal.</li>
+							<li>Una vez cargada la página, el programa puede continuar su ejecución.</li>
+						</ul>
+						<p>Este método permite que los programas se ejecuten incluso si solo una fracción de sus páginas
+							está en la memoria física, haciendo un uso más eficiente de la RAM y permitiendo la
+							ejecución de programas más grandes que la memoria física disponible.</p>
+						<div class="image-placeholder">Imagen del Proceso de Paginación por Demanda</div>
+						<img src="placeholder_demand_paging.png" alt="Paginación por Demanda" class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Ventajas de la Paginación por Demanda</h3>
+						<ul>
+							<li>**Mayor Utilización de la Memoria:** Solo se carga lo que es necesario, liberando
+								espacio para otros procesos.</li>
+							<li>**Menor Tiempo de Carga:** Los programas inician más rápido al no tener que cargar todas
+								sus páginas de inmediato.</li>
+							<li>**Permite Programas más Grandes:** Un programa puede ser mucho más grande que la memoria
+								física disponible, ya que no todas sus partes necesitan estar en la RAM al mismo tiempo.
+							</li>
+							<li>**Multiprogramación Mejorada:** Se pueden ejecutar más procesos simultáneamente al
+								reducir la cantidad de memoria física que cada uno ocupa.</li>
+						</ul>
+					</div>
 				</section>
 
 				<!--Fallo de página: causas y manejo-->
 				<section>
+					<h3>Fallo de Página</h3>
+					<p>Un **fallo de página** (o Page Fault) es un evento crucial en los sistemas de paginación por
+						demanda. Ocurre cuando un programa intenta acceder a una página de memoria que no está cargada
+						actualmente en la memoria principal (RAM).</p>
 
+					<div class="section">
+						<h3>Causas de un Fallo de Página</h3>
+						<ul>
+							<li>**Acceso a una Página No Presente:** La causa más común. La página a la que se intenta
+								acceder está en el almacenamiento secundario (disco), no en la RAM.</li>
+							<li>**Primera Referencia:** Cuando un programa se inicia o accede a una sección de
+								código/datos por primera vez, su página correspondiente aún no ha sido cargada.</li>
+							<li>**Página Swapeada:** Una página que previamente estuvo en la memoria principal fue
+								movida al espacio de intercambio (swap space) en el disco para liberar RAM para otro
+								proceso.</li>
+							<li>**Página Inválida/Protección:** Si la página a la que se accede no es válida para el
+								proceso (por ejemplo, fuera de los límites de su espacio de direcciones) o el acceso
+								viola las protecciones de memoria (intento de escritura en una página de solo lectura),
+								se puede generar un fallo de página (aunque a menudo esto resulta en un error de
+								segmentación o protección).</li>
+						</ul>
+						<div class="image-placeholder">Imagen ilustrando un Fallo de Página</div>
+						<img src="placeholder_page_fault_cause.png" alt="Causas de Fallo de Página"
+							class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Manejo de un Fallo de Página</h3>
+						<p>Cuando se produce un fallo de página, el hardware (MMU) genera una interrupción, y el control
+							se pasa al sistema operativo. El SO sigue estos pasos para manejar el fallo:</p>
+						<ol>
+							<li>**Verificar la validez de la referencia:** El SO primero verifica si la dirección lógica
+								es válida y si el proceso tiene los permisos adecuados para acceder a ella. Si no, se
+								termina el proceso con un error (por ejemplo, "error de segmentación").</li>
+							<li>**Encontrar la página en el disco:** Si la referencia es válida, el SO localiza la
+								página requerida en el almacenamiento secundario (generalmente el archivo de paginación
+								o el archivo ejecutable en el disco).</li>
+							<li>**Encontrar un marco libre:** El SO busca un marco de página libre en la memoria
+								principal.</li>
+							<li>**Algoritmo de Reemplazo de Páginas (si no hay marcos libres):** Si no hay marcos
+								libres, el SO debe seleccionar una página existente en la memoria para desalojar y
+								liberar su marco. Esto se hace usando un algoritmo de reemplazo de páginas (FIFO, LRU,
+								Óptimo, etc.). Si la página seleccionada para desalojar ha sido modificada, debe
+								escribirse de nuevo en el disco antes de ser desalojada.</li>
+							<li>**Cargar la página:** La página requerida se lee del disco y se carga en el marco de
+								página recién liberado o encontrado.</li>
+							<li>**Actualizar la tabla de páginas:** La tabla de páginas del proceso se actualiza para
+								reflejar la nueva ubicación de la página y su estado (marcarla como "presente").</li>
+							<li>**Reiniciar la instrucción:** El control se devuelve al proceso, y la instrucción que
+								causó el fallo de página se reinicia. El proceso ahora puede acceder a la dirección sin
+								problemas.</li>
+						</ol>
+						<div class="image-placeholder">Diagrama del Manejo de un Fallo de Página</div>
+						<img src="placeholder_page_fault_handling.png" alt="Manejo de Fallo de Página"
+							class="image-placeholder">
+					</div>
 				</section>
 
 				<!--Segmentación paginada y paginación segmentada: combinación de técnicas-->
 				<section>
+					<h3>Combinación de Paginación y Segmentación</h3>
+					<p>Para obtener los beneficios de ambas técnicas de gestión de memoria, la paginación y la
+						segmentación a menudo se combinan. Existen dos enfoques principales para esta combinación:
+						**Segmentación Paginada** y **Paginación Segmentada**.</p>
 
+					<div class="section">
+						<h3>Segmentación Paginada</h3>
+						<p>En la **segmentación paginada**, el espacio de direcciones de un proceso se divide primero en
+							**segmentos** lógicos (como en la segmentación pura). Sin embargo, a diferencia de la
+							segmentación pura donde cada segmento es un bloque contiguo en la memoria física, en este
+							esquema, cada segmento se divide a su vez en **páginas** de tamaño fijo.</p>
+						<p>Para cada segmento, hay una tabla de páginas asociada. La dirección lógica se compone de
+							(número de segmento, número de página, desplazamiento).</p>
+						<ol>
+							<li>El **número de segmento** se usa para indexar una **tabla de segmentos principal**.</li>
+							<li>Cada entrada en la tabla de segmentos apunta a la **tabla de páginas** específica de ese
+								segmento.</li>
+							<li>El **número de página** se usa para indexar la tabla de páginas del segmento para
+								encontrar el **marco de página físico**.</li>
+							<li>El **desplazamiento** se añade al marco de página para obtener la dirección física
+								final.</li>
+						</ol>
+						<h3>Ventajas:</h3>
+						<ul>
+							<li>Combina la organización lógica de la segmentación con la gestión eficiente de la memoria
+								física de la paginación.</li>
+							<li>Elimina la fragmentación externa (debido a la paginación).</li>
+							<li>Permite compartir segmentos de forma más fácil.</li>
+						</ul>
+						<div class="image-placeholder">Diagrama de Segmentación Paginada</div>
+						<img src="placeholder_segmented_paging.png" alt="Segmentación Paginada"
+							class="image-placeholder">
+					</div>
+
+					<div class="section">
+						<h3>Paginación Segmentada (Paginación con Segmentación Invertida)</h3>
+						<p>Este término a veces se usa indistintamente con "segmentación paginada", pero también puede
+							referirse a un enfoque donde la tabla de páginas se organiza de una manera que se parece a
+							la segmentación. En algunos contextos más específicos, podría referirse a sistemas que usan
+							una tabla de páginas invertida combinada con una organización segmentada de los procesos.
+						</p>
+						<p>Sin embargo, el uso más común y directo de la combinación es la **Segmentación Paginada**
+							como se describió anteriormente, donde la paginación se aplica *dentro* de cada segmento.
+						</p>
+						<h3>Concepto Alternativo (Menos común como "Paginación Segmentada" aislada):</h3>
+						<p>En ciertos arquitecturas, se puede tener un enfoque donde los procesos se dividen en páginas,
+							pero estas páginas se agrupan lógicamente en segmentos, o se usa una tabla de páginas
+							invertida (que ya elimina la necesidad de una tabla de páginas por proceso) y se añade una
+							capa de segmentación en la parte superior para la protección y el compartimiento.</p>
+						<div class="image-placeholder">Diagrama de una Paginación Segmentada (si aplica)</div>
+						<img src="placeholder_paged_segmentation.png" alt="Paginación Segmentada"
+							class="image-placeholder">
+					</div>
 				</section>
 			</section>
 		</div>
@@ -128,7 +758,10 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-
+			progress: true,
+			slideNumber: true,
+			showSlideNumber: 'all',
+			mouseWheel: false,
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
